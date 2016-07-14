@@ -1,8 +1,6 @@
 #ifndef MOTORCONTROL_H
 #define MOTORCONTROL_H
 
-//#include "Arduino.h"
-
 class MotorControl {
 public:
 	MotorControl(int pinChannelA, int pinChannelB);

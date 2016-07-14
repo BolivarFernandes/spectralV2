@@ -6,29 +6,33 @@ GyroSense::GyroSense(int pinAnalog) {
 }
 
 void GyroSense::Update() {
-	//This line converts the 0-1023 signal to 0-5V
-	float gyroRate = (analogRead(_pinAnalog) * _voltage) / 1023;
+	_currentTime = millis();
 
-	//This line finds the voltage offset from sitting still
-	gyroRate -= _zeroVoltge;
+	if (_currentTime - _previousTime > 10) {
+		//This line converts the 0-1023 signal to 0-5V
+		float gyroRate = (analogRead(_pinAnalog) * _voltage) / 1023;
 
-	//This line divides the voltage we found by the gyro's sensitivity
-	gyroRate /= _sensitivity;
+		//This line finds the voltage offset from sitting still
+		gyroRate -= _zeroVoltge;
 
-	//Ignore the gyro if our angular velocity does not meet our threshold
-	if (gyroRate >= _rotationThreshold or gyroRate <= -_rotationThreshold) {
-	//This line divides the value by 100 since we are running in a 10ms loop (1000ms/10ms)
-	gyroRate /= 100;
-	_currentAngle += gyroRate;
+		//This line divides the voltage we found by the gyro's sensitivity
+		gyroRate /= _sensitivity;
+
+		//Ignore the gyro if our angular velocity does not meet our threshold
+		if (gyroRate >= _rotationThreshold or gyroRate <= -_rotationThreshold) {
+		//This line divides the value by 100 since we are running in a 10ms loop (1000ms/10ms)
+		gyroRate /= 100;
+		_currentAngle += gyroRate;
+		}
+
+		//Keep our angle between 0-359 degrees
+		if (_currentAngle < 0)
+		_currentAngle += 360;
+		else if (_currentAngle > 359)
+		_currentAngle -= 360;
+
+		_previousTime = _currentTime; // Get ready for next update
 	}
-
-	//Keep our angle between 0-359 degrees
-	if (_currentAngle < 0)
-	_currentAngle += 360;
-	else if (_currentAngle > 359)
-	_currentAngle -= 360;
-
-	_previousTime = _currentTime; // Get ready for next update
 }
 
 int GyroSense::GetAngle() {

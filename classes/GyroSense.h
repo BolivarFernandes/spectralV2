@@ -1,6 +1,8 @@
 #ifndef GYROSENSE_H
 #define GYROSENSE_H
 
+#include "Arduino.h"
+
 class GyroSense {
 public:
 	GyroSense(int pinAnalog);
@@ -9,7 +11,7 @@ public:
 	void SetVoltage(float value);
 	void SetZeroVoltage(float value);
 	void SetSensitivity(float value);
-	void SetRotationThreshhold(float value);
+	void SetRotationThreshold(float value);
 private:
 	int _currentTime;
 	int _previousTime;
