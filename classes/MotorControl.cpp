@@ -1,29 +1,29 @@
 #include "Arduino.h"
 #include "MotorControl.h"
 
-MotorControl::MotorControl(int pinChannelA, int pinChannelB) {
-	_pinChannelA = pinChannelA; // Move to private variable
-	_pinChannelB = pinChannelB; // ''
+MotorControl::MotorControl(int pinA, int pinB) {
+	_pinA = pinA; // Move to private variable
+	_pinB = pinB; // ''
 
-	pinMode(_pinChannelA, OUTPUT); // Set pin mode to output
-	pinMode(_pinChannelB, OUTPUT); // ''
+	pinMode(_pinA, OUTPUT); // Set pin mode to output
+	pinMode(_pinB, OUTPUT); // ''
 }
 
 MotorControl::~MotorControl() {
-	digitalWrite(_pinChannelA, LOW);
-	digitalWrite(_pinChannelB, LOW);
+	digitalWrite(_pinA, LOW);
+	digitalWrite(_pinB, LOW);
 }
 
 void MotorControl::Set(float value) {
 	_value = value;
 	// Set pin pwm output
 	if (value >= 0) {
-    	analogWrite(_pinChannelA, value * 255);
-    	digitalWrite(_pinChannelB, LOW);
+    	analogWrite(_pinA, value * 255);
+    	digitalWrite(_pinB, LOW);
   	}
   	else {
-    	analogWrite(_pinChannelA, LOW);
-    	digitalWrite(_pinChannelB, fabs(value) * 255); // Absolute speed, no negatives!
+    	analogWrite(_pinA, LOW);
+    	digitalWrite(_pinB, fabs(value) * 255); // Absolute speed, no negatives!
   	}
 }
 

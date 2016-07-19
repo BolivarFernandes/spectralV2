@@ -3,13 +3,13 @@
 
 class MotorControl {
 public:
-	MotorControl(int pinChannelA, int pinChannelB);
+	MotorControl(int pinA, int pinB);
 	~MotorControl();
 	void Set(float value);
 	float Get();
 private:
-	int _pinChannelA;
-	int _pinChannelB;
+	int _pinA;
+	int _pinB;
 	float _value;
 };
 
