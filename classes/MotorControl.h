@@ -4,6 +4,7 @@
 class MotorControl {
 public:
 	MotorControl(int pinChannelA, int pinChannelB);
+	~MotorControl();
 	void Set(float value);
 	float Get();
 private:

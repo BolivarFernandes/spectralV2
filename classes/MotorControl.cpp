@@ -9,6 +9,11 @@ MotorControl::MotorControl(int pinChannelA, int pinChannelB) {
 	pinMode(_pinChannelB, OUTPUT); // ''
 }
 
+MotorControl::~MotorControl() {
+	digitalWrite(_pinChannelA, LOW);
+	digitalWrite(_pinChannelB, LOW);
+}
+
 void MotorControl::Set(float value) {
 	_value = value;
 	// Set pin pwm output
