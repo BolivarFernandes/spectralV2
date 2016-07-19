@@ -1,5 +1,5 @@
-#include "Arduino.h"
 #include "MotorControl.h"
+#include "Arduino.h"
 
 MotorControl::MotorControl(int pinA, int pinB) {
 	_pinA = pinA; // Move to private variable
