@@ -8,7 +8,9 @@ GyroSense::GyroSense(int pinAnalog) {
 void GyroSense::Update() {
 	_currentTime = millis();
 
-	if (_currentTime - _previousTime > 10) {
+	_timeDifference = _currentTime - _previousTime;
+
+	if (_timeDifference > 10) {
 		//This line converts the 0-1023 signal to 0-5V
 		float gyroRate = (analogRead(_pinAnalog) * _voltage) / 1023;
 
@@ -21,7 +23,7 @@ void GyroSense::Update() {
 		//Ignore the gyro if our angular velocity does not meet our threshold
 		if (gyroRate >= _rotationThreshold or gyroRate <= -_rotationThreshold) {
 		//This line divides the value by 100 since we are running in a 10ms loop (1000ms/10ms)
-		gyroRate /= 100;
+		gyroRate /= 1000 / _timeDifference;
 		_currentAngle += gyroRate;
 		}
 

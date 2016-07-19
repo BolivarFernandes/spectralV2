@@ -15,6 +15,7 @@ public:
 private:
 	int _currentTime;
 	int _previousTime;
+	int _timeDifference;
 	int _pinAnalog;					// Analog pin
 	int _currentAngle;				// Current Angle
 	float _votage = 5;				// Volatage
