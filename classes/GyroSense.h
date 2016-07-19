@@ -13,9 +13,9 @@ public:
 	void SetSensitivity(float value);
 	void SetRotationThreshold(float value);
 private:
-	int _currentTime;
-	int _previousTime;
-	int _timeDifference;
+	long _currentTime;
+	long _previousTime;
+	long _timeDifference;
 	int _pinAnalog;					// Analog pin
 	int _currentAngle;				// Current Angle
 	float _votage = 5;				// Volatage
