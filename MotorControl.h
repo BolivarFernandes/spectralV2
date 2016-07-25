@@ -1,7 +1,7 @@
 #ifndef MOTORCONTROL_H
 #define MOTORCONTROL_H
 
-class MotorControl {
+class MotorControl{
 public:
 	MotorControl(int pinA, int pinB);
 	~MotorControl();

@@ -1,5 +1,5 @@
-#include "Arduino.h"
 #include "GyroSense.h"
+#include "Arduino.h"
 
 GyroSense::GyroSense(int pinAnalog) {
 	_pinAnalog = pinAnalog;
@@ -41,8 +41,8 @@ int GyroSense::GetAngle() {
 	return _currentAngle;
 }
 
-void GyroSense::SetVoltage(float value) {
-	_voltage = value;
+void GyroSense::SetVoltage(float voltageValue) {
+	_voltage = voltageValue;
 }
 
 void GyroSense::SetZeroVoltage(float value) {

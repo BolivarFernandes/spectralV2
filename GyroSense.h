@@ -18,7 +18,7 @@ private:
 	long _timeDifference;
 	int _pinAnalog;					// Analog pin
 	int _currentAngle;				// Current Angle
-	float _votage = 5;				// Volatage
+	float _votage = 5.0;				// Volatage
 	float _zeroVoltage = 2.49;   	// Gyro is zeroed at 2.5V
 	float _sensitivity = 0.007;  	// mV/deg/seck (0.007 = 7mV)
 	float _rotationThreshold = 3;   // Minimum deg/sec to keep track of - helps with gyro drifting

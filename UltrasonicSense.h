@@ -13,4 +13,4 @@ private:
 	int _pinEcho;
 };
 
-#endif
+#endif /* ULTRASONICSENSE_H */
