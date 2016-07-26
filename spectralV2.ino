@@ -55,6 +55,13 @@ void Begin() {
 }
 
 void LineFollow() {
+	float speed = 0.4;
+	float diff = LightLeft.Get() - LightRight.Get();
+
+	diff *= 0.2;
+
+	MotorLeft.Set(speed - diff);
+	MotorRight.Set(speed + diff);
 }
 
 void WaterTower() {
