@@ -15,7 +15,7 @@ void GyroSense::Update() {
 		float gyroRate = (analogRead(_pinAnalog) * _voltage) / 1023;
 
 		//This line finds the voltage offset from sitting still
-		gyroRate -= _zeroVolatge;
+		gyroRate -= _zeroVoltage;
 
 		//This line divides the voltage we found by the gyro's sensitivity
 		gyroRate /= _sensitivity;
