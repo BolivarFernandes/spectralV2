@@ -5,6 +5,8 @@ UltrasonicSense::UltrasonicSense(int pinTrig, int pinEcho) {
 	_pinEcho = pinEcho;
 }
 
+UltrasonicSense::~UltrasonicSense() {}
+
 int UltrasonicSense::getCM() {
 	return getRaw() / 58;
 }

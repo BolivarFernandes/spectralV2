@@ -1,0 +1,353 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"En",
+				"EncRight"
+			],
+			[
+				"ENc",
+				"EncLeft"
+			],
+			[
+				"Motor",
+				"MotorLeft"
+			],
+			[
+				"WaterTo",
+				"WaterTowerState"
+			],
+			[
+				"LINEF",
+				"LINEFOLLOW"
+			],
+			[
+				"Mo",
+				"MotorLeft"
+			],
+			[
+				"motor",
+				"MotorLeft"
+			],
+			[
+				"Wat",
+				"WaterTowerState"
+			],
+			[
+				"w",
+				"WaterTower"
+			],
+			[
+				"Mot",
+				"MotorControl"
+			],
+			[
+				"Moto",
+				"MotorRight"
+			],
+			[
+				"Li",
+				"LightRight"
+			],
+			[
+				"Lig",
+				"LightLeft"
+			],
+			[
+				"pin",
+				"pinChannelB"
+			],
+			[
+				"diit",
+				"digitalRead"
+			],
+			[
+				"curre",
+				"_currentTime"
+			],
+			[
+				"Num",
+				"NUM_MODES"
+			],
+			[
+				"de",
+				"deadzone"
+			],
+			[
+				"G",
+				"GetRawButton"
+			],
+			[
+				"for",
+				"forwardSpeed"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "LightSense.h",
+			"settings":
+			{
+				"buffer_size": 165,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "LightSense.cpp",
+			"settings":
+			{
+				"buffer_size": 351,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/leo2a/Documents/GitHub/spectralV2"
+	],
+	"file_history":
+	[
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/spectralV2.ino",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/MotorControl.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/LightSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/UltrasonicSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/MotorControl.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/LightSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/UltrasonicSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/EncoderSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/EncoderSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/GyroSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/GyroSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/DualMotorControl.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/DualMotorControl.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/MotorControl.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/LightSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/MotorControl.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/LightSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/GyroSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/GyroSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/EncoderSense.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/EncoderSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/DualMotorControl.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/DualMotorControl.cpp",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/UltrasonicSense.h",
+		"/C/Users/leo2a/Documents/GitHub/spectralV2/classes/UltrasonicSense.cpp",
+		"/C/Users/leo2a/workspace/Tau/src/CustomFunctions.h",
+		"/C/Users/leo2a/workspace/Tau/src/Robot.cpp"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pinChannel",
+			"Joy",
+			"Xbox"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"pin",
+			"Cont"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "LightSense.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "LightSense.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "spectralV2.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

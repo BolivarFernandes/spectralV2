@@ -17,18 +17,14 @@ MotorControl::~MotorControl() {
 void MotorControl::Set(float value) {
 	_value = value;
 	// Set pin pwm output
-	if (value > 0) {
-    	analogWrite(_pinA, value * 255);
-    	digitalWrite(_pinB, HIGH);
-  	}
-  	else if (value < 0) {
-    	analogWrite(_pinA, HIGH);
-    	digitalWrite(_pinB, fabs(value) * 255); // Absolute speed, no negatives!
-  	}
-  	else {
-  		digitalWrite(_pinA, LOW);
-  		digitalWrite(_pinB, LOW);
-  	}
+	if (value >= 0) {
+		analogWrite(_pinA, value * 255);
+		digitalWrite(_pinB, LOW);
+	}
+	else {
+		analogWrite(_pinA, LOW);
+		digitalWrite(_pinB, fabs(value) * 255); // Absolute speed, no negatives!
+	}
 }
 
 float MotorControl::Get() {

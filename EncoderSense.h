@@ -1,3 +1,4 @@
+/*
 #ifndef ENCODERSENSE_H
 #define ENCODERSENSE_H
 

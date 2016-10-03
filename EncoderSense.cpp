@@ -1,5 +1,5 @@
 #include "EncoderSense.h"
-
+/*
 EncoderSense::EncoderSense(int pinA, int pinB) {
 	_pinA = pinA;
 	_pinB = pinB;
@@ -26,5 +26,5 @@ void EncoderSense::Enable() {
 void EncoderSense::Disable() {
 	detachInterrupt(digitalPinToInterrupt(_pinA));
 }
-
+*/
 
